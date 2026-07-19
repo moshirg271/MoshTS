@@ -72,7 +72,8 @@
   body {
     display: flex;
     justify-content: center;
-    padding: 64px 20px 40px;
+    align-items: center;
+    padding: 40px 20px;
   }
 
   .page {
@@ -203,13 +204,6 @@
     border-color: var(--accent);
   }
 
-  footer {
-    text-align: center;
-    margin-top: 40px;
-    font-size: 11px;
-    color: var(--text-faint);
-    letter-spacing: 0.03em;
-  }
 </style>
 </head>
 <body>
@@ -292,12 +286,6 @@
       a.rel = 'noopener noreferrer';
       socialsEl.appendChild(a);
     });
-  </script>
-
-  <footer>&copy; <span id="year"></span> <span id="footerName"></span></footer>
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-    document.getElementById('footerName').textContent = PROFILE.name;
   </script>
 
 </body>
